@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1b1b2f;
+    color: #eaeaea;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Estilo do cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #282a36;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #00adb5;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    color: #c0c0c0;
+}
+
+.imagem-diretores {
+    width: 80%; 
+    height: auto; 
+}
+/* Estilo da galeria */
+#galeria {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#galeria h2 {
+    font-size: 2rem;
+    color: #00adb5;
+    margin-bottom: 20px;
+}
+
+.foto {
+    display: inline-block;
+    margin: 10px;
+}
+
+.foto img {
+    width: 200px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.foto img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.foto p {
+    font-size: 1rem;
+    color: #c0c0c0;
+    margin-top: 5px;
+}
+
+/* Estilo das abas de texto */
+.abas-textos {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #282a36;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.aba-conteudo {
+    display: none;
+}
+
+.aba-conteudo.ativo {
+    display: block;
+}
+
+.aba-conteudo-titulo-principal {
+    font-size: 1.8rem;
+    color: #00adb5;
+    margin-bottom: 10px;
+}
+
+.aba-conteudo-titulo-secundario {
+    font-size: 1.2rem;
+    color: #c0c0c0;
+}
+
+/* Estilo do rodapé */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #282a36;
+    border-radius: 10px;
+    text-align: center;
+    color: #c0c0c0;
+}
+
+.rodape {
+    font-size: 1rem;
+}
+
+/* Importando fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
